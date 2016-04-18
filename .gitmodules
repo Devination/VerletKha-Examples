@@ -1,0 +1,3 @@
+[submodule "Shapes/Libraries/verlet"]
+	path = Shapes/Libraries/verlet
+	url = https://github.com/Devination/VerletKha.git
