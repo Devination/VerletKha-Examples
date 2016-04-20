@@ -7,7 +7,7 @@ import kha.math.Vector2;
 import verlet.Objects.Tire;
 import verlet.Verlet;
 import verlet.Renderer;
-import verlet.collision.Shapes.Circle;
+import verlet.collision.Shapes;
 
 class Project {
 	var world:Verlet;
@@ -27,6 +27,7 @@ class Project {
 		new Circle(new Vector2(222, 200), 256);
 		new Circle(new Vector2(666, 300), 128);
 		new Circle(new Vector2(400, 600), 128);
+		new Box(new Vector2(222, 200), 256, 80);
 	}
 
 	function update(): Void {
