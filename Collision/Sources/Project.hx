@@ -27,7 +27,7 @@ class Project {
 		new Circle(new Vector2(222, 200), 256);
 		new Circle(new Vector2(666, 300), 128);
 		new Circle(new Vector2(400, 600), 128);
-		new Box(new Vector2(222, 200), 256, 80);
+		new Box(new Vector2(200, 200), 256, 80);
 	}
 
 	function update(): Void {
