@@ -38,7 +38,7 @@ class Project {
 	function render(framebuffer: Framebuffer): Void {		
 		var graphics = framebuffer.g2;
 		graphics.begin();
-		verletRenderer.render(graphics);
+		verletRenderer.renderAll(graphics);
 		graphics.end();
 	}
 }
