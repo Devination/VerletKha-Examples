@@ -4,3 +4,9 @@
 [submodule "Collision/Libraries/verlet"]
 	path = Collision/Libraries/verlet
 	url = https://github.com/Devination/VerletKha.git
+[submodule "PolgonCollision/Libraries/verlet"]
+	path = PolgonCollision/Libraries/verlet
+	url = https://github.com/Devination/VerletKha.git
+[submodule "PolygonCollision/Libraries/verlet"]
+	path = PolygonCollision/Libraries/verlet
+	url = https://github.com/Devination/VerletKha.git
