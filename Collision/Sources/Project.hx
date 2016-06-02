@@ -7,7 +7,7 @@ import kha.math.Vector2;
 import verlet.Objects.Tire;
 import verlet.Verlet;
 import verlet.Renderer;
-import verlet.collision.Shapes;
+import verlet.collision.Colliders;
 
 class Project {
 	var world:Verlet;
