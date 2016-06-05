@@ -10,3 +10,6 @@
 [submodule "PolygonCollision/Libraries/verlet"]
 	path = PolygonCollision/Libraries/verlet
 	url = https://github.com/Devination/VerletKha.git
+[submodule "Forces/Libraries/verlet"]
+	path = Forces/Libraries/verlet
+	url = https://github.com/Devination/VerletKha.git
