@@ -15,15 +15,10 @@ import kha.graphics2.Graphics;
 using kha.graphics2.GraphicsExtension;
 
 class Project {
-	var world:Verlet;
-	var verletRenderer:Renderer;
-	
 	public function new() {
 		System.notifyOnRender(render);
 		Scheduler.addTimeTask(update, 0, 1 / 60);
-		world = new Verlet(800, 600);
-		// Render Verlet world
-		verletRenderer = Renderer.Instance;
+		new Verlet(800, 600);
 		
 		// Entities
 		var tire:Tire = new Tire(new Vector2(170,-32), 64, 32, .05, .5);
@@ -53,14 +48,14 @@ class Project {
 	}
 
 	function update(): Void {
-		world.update(10);
+		Verlet._instance.update(10);
 	}
 
 	var debug = true;
 	function render(framebuffer: Framebuffer): Void {		
 		var graphics = framebuffer.g2;
 		graphics.begin();
-		verletRenderer.renderAll(graphics);
+		Renderer._instance.renderAll(graphics);
 		graphics.color = Color.Red;
 		debug = false;
 		graphics.end();

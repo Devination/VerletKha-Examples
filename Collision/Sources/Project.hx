@@ -10,15 +10,10 @@ import verlet.Renderer;
 import verlet.collision.Colliders;
 
 class Project {
-	var world:Verlet;
-	var verletRenderer:Renderer;
-	
 	public function new() {
 		System.notifyOnRender(render);
 		Scheduler.addTimeTask(update, 0, 1 / 60);
-		world = new Verlet(800, 600);
-		// Render Verlet world
-		verletRenderer = Renderer.Instance;
+		new Verlet(800, 600);
 		
 		// Entities
 		new Tire(new Vector2(500,32), 64, 32, .05, .5);
@@ -31,14 +26,13 @@ class Project {
 	}
 
 	function update(): Void {
-		
-		world.update(10);
+		Verlet._instance.update(10);
 	}
 
 	function render(framebuffer: Framebuffer): Void {		
 		var graphics = framebuffer.g2;
 		graphics.begin();
-		verletRenderer.renderAll(graphics);
+		Renderer._instance.renderAll(graphics);
 		graphics.end();
 	}
 }
